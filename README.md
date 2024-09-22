@@ -12,7 +12,6 @@ This README provides instructions on how to set up and run the Elasticsearch, Lo
 1. Create a `docker-compose.yml` file in your project directory with the following content:
 
 ```yaml
-version: '3'
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.15.2
