@@ -11,7 +11,7 @@ This README provides instructions on how to set up and run the Elasticsearch, Lo
 
 1. Create a `docker-compose.yml` file in your project directory with the following content:
 
-
+```yaml
 version: '3'
 services:
   elasticsearch:
@@ -68,7 +68,7 @@ networks:
 volumes:
   es-data:
     driver: local
-
+```
 
 2. Create the necessary Logstash configuration files:
    - Create a `logstash` folder in your project directory
