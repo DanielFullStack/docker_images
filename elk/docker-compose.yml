@@ -46,10 +46,10 @@ services:
     depends_on:
       - elasticsearch
 
-networks:
-  images-network:
-    external: true
-
 volumes:
   es-data:
     driver: local
+
+networks:
+  images-network:
+    external: true
