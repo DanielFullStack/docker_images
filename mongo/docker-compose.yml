@@ -1,0 +1,24 @@
+services:
+  mongodb:
+    image: mongo:4.4.6
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: username
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: database
+    volumes:
+      - mongodata:/data/db
+      - mongoconfig:/data/configdb
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    networks:
+      - images-network
+
+volumes:
+  mongodata:
+  mongoconfig:
+
+networks:
+  images-network:
+    external: true
