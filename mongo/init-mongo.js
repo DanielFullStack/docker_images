@@ -16,7 +16,7 @@ const email_templates = [
     {
         _id: ObjectId("65a7b9c83f2d1e4b8c0f2d40"),
         subject: "Recuperação de Senha",
-        templateBody: "<html><body><h1>Recuperação de Senha</h1><p>Olá {{name}},</p><p>Você solicitou a recuperação de senha. Clique no link abaixo para redefinir sua senha:</p><p><a href='{{resetLink}}'>Redefinir Senha</a></p><p>Se você não solicitou esta alteração, por favor ignore este e-mail.</p><p>Atenciosamente,<br>{{marca}}</p></body></html>"
+        templateBody: "<html><body><h1>Recuperação de Senha</h1><p>Olá {{name}},</p><p>Você solicitou a recuperação de senha. Use o token abaixo para redefinir sua senha:</p><p><strong>{{resetToken}}</strong></p><p>Se você não solicitou esta alteração, por favor ignore este e-mail.</p><p>Atenciosamente,<br>{{marca}}</p></body></html>"
     },
     {
         _id: ObjectId("65a7b9c83f2d1e4b8c0f2d41"),
